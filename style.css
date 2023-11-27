@@ -10,6 +10,8 @@
     text-decoration: none;
 }
 
+/* Admin and User Details */
+
 .container{
     min-height: 100vh;
     display: flex;
@@ -27,4 +29,100 @@
 .container .content h3{
  font-size: 30px;
  color: turquoise;
+}
+
+.container .content h1 span{
+    font-size: 30px;
+    color: #fff;
+    background: rgb(220, 213, 20);
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.container .content p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container .content .btn{
+    display:inline-block;
+    padding:10px 30px;
+    font-size:20px;
+    background:#3333;
+    color: #fff;
+    margin: 0 5px;
+    border-radius:10px;
+}
+
+
+/* Register Details */
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background: #eee;
+}
+
+.form-container form{
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+}
+
+.form-container form h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+.form-container form input,
+.form-container form select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size:20px;
+    margin: 8px 0;
+    background: #eee;
+}
+
+.form-container form select option{
+    background: #fff;
+}
+
+.form-container form .form-btn{
+    background: #fbd09d;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: size;
+    cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+    background-color: crimson;
+    color: #fff;
+}
+
+.form-container form p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-container form p a{
+    color: crimson;
+}
+
+ form .error-msg{
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
 }

@@ -1,3 +1,16 @@
+<?php
+
+@include 'config.php';
+
+session_start();
+
+if(!isset($_SESSION['admin_name'])){
+    header('location:Admin.php');
+};
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +26,7 @@
     <div class="content">
         <h3>Hi, Admin 🖐🖐</h3>
         
-        <h1><i>Welcome <span></span></i></h1>
+        <h1><i>Welcome</i> <span><?php echo $_SESSION['admin_name']?></span></h1>
 
         <p>This is an Admin Page</p>
 
